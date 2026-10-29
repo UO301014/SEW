@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Juegos</title>
+
+    <meta name="author" content="Daniel Suárez Sánchez" />
+    <meta name="description" content="Documento juegos.html del proyecto LaVuelta2026" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link href="multimedia/favicon.ico" rel="icon"/>
+</head>
+
+<body>
+   <!-- contenido de juegos.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a title="Inicio de la página" href="index.html">Inicio</a>
+            <a title="Ciclista" href="ciclista.html">Ciclista</a>
+            <a title="Equipo" href="equipo.html">Equipo</a>
+            <a title="Etapa" href="etapa.html">Etapa</a>
+            <a title="Meteorologia" href="meteorologia.html">Meteorologia</a>
+            <a title="Clasificaciones" href="clasificaciones.html">Clasificaciones</a>
+            <a title="Juegos" href="juegos.html" aria-current="page">Juegos</a>
+            <a title="Ayuda al usuario" href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a title="Inicio de la página" href="index.html">Inicio</a></li>
+            <li>>></li>
+            <li>Juegos</li>
+        </ol>
+    </nav>
+
+    <main>
+        <h2>Juegos</h2>
+        <h3>¿Conoces la etapa?</h3>
+        <p>Este juego consta de 10 preguntas sobre la información de la etápa. ¡Vamos a descubrir como de fan eres!</p>
+
+        <form>
+            <fieldset>
+                <legend>Etápa 1 | Mónaco - Mónaco</legend>
+
+                <p>
+                    <label for="numero-etapa">¿Cuál es el número de la etapa?</label>
+                    <input type="number" id="numero-etapa" name="numero-etapa" min="1" max="21" required/>
+                </p>
+
+                <p>
+                    <label for="fecha-etapa">¿Cuál es la fecha de la celebración de la etapa?</label>
+                    <input type="date" id="fecha-etapa" name="fecha-etapa" min="2026-08-22" max="2026-09-13" required />
+                </p>
+
+                <p>
+                    <label for="ciudad-salida">¿Cuál es el lugar de salida de la etapa?</label>
+                    <select id="ciudad-salida" name="ciudad-salida" required>
+                        <option value="" selected disabled>-- Seleccione una opción --</option>
+                        <option value="Monaco">Mónaco</option>
+                        <option value="Gruissan">Gruissan - Aude</option>
+                        <option value="Andorra">Andorra la Vella</option>
+                        <option value="Falset">Falset</option>
+                        <option value="Alcossebre">Alcossebre</option>
+                        <option value="Vall_Alba">Vall d'Alba</option>
+                        <option value="Pucol">Puçol</option>
+                        <option value="Vila_Joiosa">La Vila Joiosa</option>
+                        <option value="Alcaraz">Alcaraz</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="Vera">Vera</option>
+                        <option value="Almunecar">Almuñécar</option>
+                        <option value="Jaen">Jaén</option>
+                        <option value="Palma_Rio">Palma del Río</option>
+                        <option value="Cortegana">Cortegana</option>
+                        <option value="Dos_Hermanas">Dos Hermanas</option>
+                        <option value="Puerto_Santa_Maria">El Puerto de Santa María</option>
+                        <option value="Velez_Malaga">Vélez-Málaga</option>
+                        <option value="Calahorra">La Calahorra</option>
+                        <option value="Carrefour_Granada">Carrefour Granada</option>
+                    </select>
+                </p>
+
+                <p>¿De qué tipo de etapa se trata?</p>
+                <p>
+                    <input type="radio" id="tipo-llana" name="tipo-etapa" value="llana" required />
+                    <label for="tipo-llana">Llana</label><br/>
+
+                    <input type="radio" id="tipo-media-montana" name="tipo-etapa" value="media montaña" />
+                    <label for="tipo-media-montana">Media montaña</label><br/>
+
+                    <input type="radio" id="tipo-montana" name="tipo-etapa" value="montaña" />
+                    <label for="tipo-montana">Montaña</label><br/>
+
+                    <input type="radio" id="tipo-cri" name="tipo-etapa" value="contrarreloj individual" />
+                    <label for="tipo-cri">Contrarreloj individual</label><br/>
+
+                    <input type="radio" id="tipo-cre" name="tipo-etapa" value="contrarreloj por equipos" />
+                    <label for="tipo-cre">Contrarreloj por equipos</label>
+                </p>
+
+                <p>¿Qué hitos están presentes en la etapa?</p>
+                <p>
+                    <input type="checkbox" id="hito-puerto" name="hitos-etapa" value="puerto de montana" />
+                    <label for="hito-puerto">Puerto de montaña</label><br/>
+
+                    <input type="checkbox" id="hito-especial" name="hitos-etapa" value="puerto categoria especial" />
+                    <label for="hito-especial">Puerto categoría especial</label><br/>
+
+                    <input type="checkbox" id="hito-sprint" name="hitos-etapa" value="sprint intermedio" />
+                    <label for="hito-sprint">Sprint intermedio</label><br/>
+
+                    <input type="checkbox" id="hito-bonificado" name="hitos-etapa" value="sprint bonificado" />
+                    <label for="hito-bonificado">Sprint bonificado</label><br/>
+
+                    <input type="checkbox" id="hito-ninguno" name="hitos-etapa" value="sin hitos" />
+                    <label for="hito-ninguno">Sin hitos</label>
+                </p>
+
+                <p>
+                    <label for="dureza-etapa">¿Cómo valorarías la dureza de la etapa (del 1 al 10)?</label>
+                    <input type="range" id="dureza-etapa" name="dureza-etapa" min="1" max="10" step="1" value="5"/>
+                </p>
+
+                <p>
+                    <label for="longitud-etapa">¿Cómo de larga es la etapa (en kilómetros)?</label>
+                    <input type="number" id="longitud-etapa" name="longitud-etapa" step="0.1" min="0" required/>
+                </p>
+
+                <p>
+                    <label for="desnivel-etapa">¿Cuál es el desnivel acumulado de la etapa (en metros)?</label>
+                    <input type="number" id="desnivel-etapa" name="desnivel-etapa" min="0" step="1" required />
+                </p>
+                
+                <p>
+                    <label for="descripcion-etapa">¿Cómo describirías brevemente la etapa?</label><br/>
+                    <textarea id="descripcion-etapa" name="descripcion-etapa" rows="4" cols="50" placeholder="Escribe aquí tu descripción (ej. Etapa prólogo, técnica y muy revirada...)"></textarea>
+                </p>
+                
+                <p>
+                    <label for="nombre-participante">¿Cuál es el nombre del participante?</label>
+                    <input type="text" id="nombre-participante" name="nombre-participante" placeholder="Escribe tu nombre completo" required />
+                </p>
+
+                <p>
+                    <button type="submit">Enviar respuestas</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Daniel Suárez Sánchez</p>
+        
+        <address>
+            <a href="mailto:UO301014@uniovi.es">
+                UO301014@uniovi.es
+            </a>
+        </address>
+    </footer>
+</body>
+</html>

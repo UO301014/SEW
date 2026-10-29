@@ -1,0 +1,196 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Daniel Suárez Sánchez*/
+/*  Correo electrónico (uniovi):UO301014@uniovi.es */
+/*  Grupo de laboratorio: L4             */
+/* ***************************************/
+
+/* 
+Gama cromática del proyecto y estudio de contraste (WCAG AAA)
+
+- Color principal (#9E0000) 
+  o Contraste de 8.55:1 con color blanco (#FFFFFF) - Garantiza nivel AAA para texto normal y grande.
+  o (Nota: La combinación con el color secundario o negro no alcanza el nivel AAA, por lo que se usará exclusivamente sobre fondo o texto blanco).
+
+- Color secundario (#0B2545)
+  o Contraste de 15.46:1 con color blanco (#FFFFFF) - Garantiza nivel AAA para texto normal y grande.
+
+- Color negro (#111111)
+  o Contraste de 18.26:1 con color blanco (#FFFFFF) - Garantiza nivel AAA para texto normal y grande.
+
+- Color blanco (#FFFFFF)
+  o Fondo general del documento y texto sobre fondos oscuros (principal y secundario).
+*/
+
+/*Especifidad: 001*/
+:root{
+    --color-negro: #111111; 
+    --color-blanco: #ffffff;
+    --color-principal : #9e0000; 
+    --color-secundario: #0b2545;
+    
+    /*Colores para la tabla con estilo*/
+    --color-tabla-hover: #e9ecef;
+    --color-cebra-tabla: #f8f9fa;
+    --color-celda-tabla: #ddd; 
+}
+
+/*Especifidad: 001*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro); 
+}
+
+/* Especificidad: 001, 001 */
+header,footer{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+
+/* Especificidad: 001 */
+h2{
+    color: var(--color-principal); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+}
+
+/*
+    Dado a que los enlaces <a> son azules por defecto, 
+    forzamos enlaces blancos de ahi dentro ya que azul sobre
+    fondo rojo no se lee y suspende la accesibilidad WCAG.
+
+*/
+
+/* Especificidad: 012 */
+nav a[aria-current="page"]{
+  background-color: var(--color-blanco);
+  color: var(--color-principal); 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Especifidad 002*/
+h1 a{
+  text-decoration: none; /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+}
+
+/* Especificidad: 002, 002*/
+header a , footer a{
+    color: var(--color-blanco); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    text-decoration-line: none;
+}
+
+/*Especifidad 003*/
+header + nav > ol {
+  list-style: none;
+  font-size: 0.85em;
+  padding: 0;
+  margin: 10px 20px;
+}
+
+/*Especifidad 004*/
+header + nav > ol > li{
+  display: inline;
+}
+
+/*Especifidad 014*/
+header + nav > ol > li:last-child{
+  font-weight: bold;
+} 
+
+/*Especifidad 024*/
+main section:first-of-type ul li:first-child{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Especifidad 024*/
+main section:first-of-type ul li:nth-child(3){
+  font-size: 1.5em;
+}
+
+/*Especifidad 024*/
+main section:first-of-type ul li:nth-child(4){
+  font-weight: bold;
+}
+
+/* Especificidad: 013 */
+main section:nth-of-type(4) > * {
+    margin-bottom: 15px; 
+}
+
+
+
+/* -------------------------------------------------- */
+/* Estilos para la tabla accesible de ciclista.html  */
+/* -------------------------------------------------- */
+
+/* 
+   Contenedor principal de la tabla
+   Especificidad: 003 (3 elementos: main, section, table)
+*/
+main section table {
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5em auto;
+    border-collapse: collapse; /* Elimina el espacio doble entre bordes */
+    font-size: 1em;
+}
+
+/* 
+   Título o leyenda de la tabla (caption)
+   Especificidad: 004 (4 elementos: main, section, table, caption)
+*/
+main section table caption {
+    caption-side: top;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: var(--color-negro); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+}
+
+/* 
+   Celda de encabezado de la tabla (th)
+   Especificidad: 004 (4 elementos: main, section, table, th)
+*/
+main section table th {
+    background-color: var(--color-principal); /* Rojo institucional */
+    color: var(--color-blanco); /* Texto blanco (Contraste 8.55:1 - WCAG AAA) */
+    padding: 0.75em 1em;
+    text-align: left;
+    border: 1px solid var(--color-principal);
+}
+
+/* 
+   Celdas de datos de la tabla (td)
+   Especificidad: 004 (4 elementos: main, section, table, td)
+*/
+main section table td {
+    padding: 0.75em 1em;
+    border-bottom: 1px solid var(--color-cebra-tabla);
+    text-align: left;
+}
+
+/* 
+   Efecto cebra: filas pares con fondo suave para facilitar el seguimiento visual
+   Especificidad: 015 (1 pseudoclase: nth-child, 5 elementos: main, section, table, tbody, tr)
+*/
+main section table tbody tr:nth-child(even) {
+    background-color: var(--color-cebra-tabla); /* Gris muy claro que mantiene un contraste de texto > 15:1 */ 
+    /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+}
+
+/* 
+   Resaltado al pasar el ratón por encima (Hover)
+   Especificidad: 015 (1 pseudoclase: hover, 5 elementos: main, section, table, tbody, tr)
+*/
+main section table tbody tr:hover {
+    background-color: var(--color-tabla-hover); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+}
+
+

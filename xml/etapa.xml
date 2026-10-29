@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+<etapa>
+    <nombre>Mónaco a Mónaco</nombre>
+    <numero>1</numero>
+    <longitud unidad="km">9.4</longitud>
+    <fecha>22-08-2026</fecha>
+    <tiempo_ganador>00:10:57</tiempo_ganador>
+    <velocidad_media unidad="km/h">51.51</velocidad_media>
+    <desnivel unidad="m">80</desnivel>
+    <salida>Mónaco</salida>
+    <llegada>Mónaco</llegada>
+    <tipo>contrarreloj individual</tipo>
+
+    <referencias>
+        <referencia>https://www.visitmonaco.com/e</referencia>
+        <referencia>https://lavueltamonaco.gouv.mc/es</referencia>
+        <referencia>https://www.lavuelta.es/</referencia>
+    </referencias>
+        
+    <fotografias>
+        <fotografia>multimedia/salida_monaco.jpg</fotografia>
+        <fotografia>multimedia/tunel_de_Fairmont.jpg</fotografia>
+        <fotografia>multimedia/yates_con_corredor.jpg</fotografia>
+    </fotografias>
+
+    <videos>
+        <video>multimedia/red_jersey_minute.mp4</video>
+    </videos>
+
+    <sonidos>
+        <sonido>multimedia/podcast_monaco.mp3</sonido>
+    </sonidos>
+
+   <salida_coord>
+    <longitud_coord unidad="grados">7.427531069277956</longitud_coord>
+    <latitud_coord unidad="grados">43.73953629540799</latitud_coord>
+    <altitud_coord unidad="m">48</altitud_coord>
+    </salida_coord>
+
+    <llegada_coord>
+        <longitud_coord unidad="grados">7.421341314810148</longitud_coord>
+        <latitud_coord unidad="grados">43.73473762872134</latitud_coord>
+        <altitud_coord unidad="m">10</altitud_coord>
+    </llegada_coord>
+    
+    <hitos>
+        <punto_anonimo>
+            <nombre_punto>Plaza del Casino</nombre_punto>
+            <longitud_coord unidad="grados">7.428400</longitud_coord>
+            <latitud_coord unidad="grados">43.740200</latitud_coord>
+            <altitud_coord unidad="m">60</altitud_coord>
+            <distancia unidad="km">3.2</distancia>
+        </punto_anonimo>
+        <punto_anonimo>
+            <nombre_punto>Túnel de Fairmont</nombre_punto>
+            <longitud_coord unidad="grados">7.429500</longitud_coord>
+            <latitud_coord unidad="grados">43.741000</latitud_coord>
+            <altitud_coord unidad="m">10</altitud_coord>
+            <distancia unidad="km">5.5</distancia>
+        </punto_anonimo>
+    </hitos>
+
+    <clasificacion_etapa>
+        <corredor_etapa>
+            <posicion>1</posicion>
+            <nombre_corredor>Tadej Pogacar</nombre_corredor>
+            <equipo>UAE Team Emirates XRG</equipo>
+        </corredor_etapa>
+        <corredor_etapa>
+            <posicion>2</posicion>
+            <nombre_corredor>Ethan Hayter</nombre_corredor>
+            <equipo>Soudal - Quick Step</equipo>
+            <diferencia_tiempo>+0:00</diferencia_tiempo>
+        </corredor_etapa>
+        <corredor_etapa>
+            <posicion>3</posicion>
+            <nombre_corredor>Joshua Tarling</nombre_corredor>
+            <equipo>Netcompany Ineos</equipo>
+            <diferencia_tiempo>+0:04</diferencia_tiempo>
+        </corredor_etapa>
+    </clasificacion_etapa>
+
+    <clasificacion_general>
+        <corredor_general>
+            <posicion>1</posicion>
+            <nombre_corredor>Tadej Pogacar</nombre_corredor>
+            <equipo>UAE Team Emirates XRG</equipo>
+        </corredor_general>
+        <corredor_general>
+            <posicion>2</posicion>
+            <nombre_corredor>Ethan Hayter</nombre_corredor>
+            <equipo>Soudal - Quick Step</equipo>
+            <diferencia_tiempo>+0:00</diferencia_tiempo>
+        </corredor_general>
+        <corredor_general>
+            <posicion>3</posicion>
+            <nombre_corredor>Joshua Tarling</nombre_corredor>
+            <equipo>Netcompany Ineos</equipo>
+            <diferencia_tiempo>+0:04</diferencia_tiempo>
+        </corredor_general>
+    </clasificacion_general>
+
+    <clasificacion_equipos>
+        <equipo_c>
+            <posicion>1</posicion>
+            <nombre_equipo>UAE Team Emirates XRG</nombre_equipo>
+        </equipo_c>
+
+        <equipo_c>
+            <posicion>2</posicion>
+            <nombre_equipo>Team Visma</nombre_equipo>
+            <diferencia_tiempo>+0:03</diferencia_tiempo>
+
+        </equipo_c>
+        
+        <equipo_c>
+            <posicion>3</posicion>
+            <nombre_equipo>Decathlon CMA CGM TEAM</nombre_equipo>
+            <diferencia_tiempo>+0:07</diferencia_tiempo>
+        </equipo_c>
+    </clasificacion_equipos>
+    
+</etapa>

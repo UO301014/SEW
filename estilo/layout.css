@@ -1,0 +1,185 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Daniel Suárez Sánchez*/
+/*  Correo electrónico (uniovi):UO301014@uniovi.es */
+/*  Grupo de laboratorio: L4             */
+/* ***************************************/
+
+/*Especifidad 012*/
+main section.detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Especifidad 012*/
+main section.detalle h3{
+    flex-basis: 100%;
+    order: 1;
+}
+
+/*Especifidad: 011*/
+main section.detalle picture{
+    order:2;
+}
+
+/*Especifidad: 013*/
+main section.detalle ul{
+    order:3; 
+    list-style: none;
+    padding: 0;
+}
+
+/*Especifidad 012*/
+main section:nth-of-type(4){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Especifidad: 013*/
+main.ayuda section p{
+    width: 100%;
+}
+
+/*Especifidad: 002*/
+main section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/*Especifidad: 003*/
+main section h3{
+    grid-column: 1 / -1;
+    justify-self: start; /* Obliga al título a irse a la izquierda */
+    width: 100%;         /* Asegura que tome todo el espacio */
+}
+
+/*Especifidad: 001*/
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "cabecera"
+    "migas"
+    "contenido"
+    "pie";
+}
+
+/*Especifidad: 001*/
+header{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+/*Especifidad: 002*/
+header + nav{
+    grid-area: migas;
+}
+
+/*Especifidad: 001*/
+main{
+    grid-area: contenido;
+}
+
+/*Especifidad: 001*/
+footer{
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 1em;
+    gap : 0.5em;
+}
+
+/* ================================================== */
+/* Tarea 9.1: Media Query para tabletas (<= 1024px)   */
+/* ================================================== */
+@media (max-width: 1024px) {
+
+    /* 
+       1. Ocultar las migas de pan
+       Especificidad: 002 (2 elementos: header y nav)
+    */
+    header + nav {
+        display: none;
+    }
+
+    /* 
+       2. Cabecera en columna (título arriba, menú abajo)
+       Especificidad: 001 (1 elemento: header)
+    */
+    header {
+        flex-direction: column;
+        gap: 1em; /* Añade separación entre el título y el menú */
+    }
+
+    /* 
+       Distribución flexible e homogénea del menú de navegación
+       Especificidad: 002 (2 elementos: header y nav)
+    */
+    header nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; /* Reparte las opciones de menú uniformemente */
+        flex-wrap: wrap; /* Permite que las opciones se reordenen si la pantalla se estrecha */
+    }
+
+    /* 
+       3. Cuadrícula de corredores en 2 columnas x 4 filas (equipo.html)
+       Especificidad: 002 (2 elementos: main y section)
+    */
+    main section {
+        grid-template-columns: repeat(2, 1fr); /*ADVERTENCIA: redefinición de la propiedad*/
+    }
+}
+
+/* ================================================== */
+/* Tarea 9.2: Media Query para móviles (<= 768px)     */
+/* ================================================== */
+@media (max-width: 768px) {
+
+    /* 
+       1. Asegurar que las migas de pan permanezcan ocultas
+       Especificidad: 002 (2 elementos: header y nav)
+    */
+    header + nav {
+        display: none; /*ADVERTENCIA: redefinición de la propiedad*/
+    }
+
+    /* 
+       2. Menú de navegación con las opciones dispuestas en columna
+       Especificidad: 002 (2 elementos: header y nav)
+    */
+    header nav {
+        flex-direction: column; /* Apila los enlaces del menú verticalmente */
+        align-items: center;    /* Centra las opciones de navegación */
+        gap: 0.5em;             /* Añade separación vertical entre los enlaces */
+    }
+
+    /* 
+       3. Cuadrícula de corredores en 1 columna x 8 filas (equipo.html)
+       Especificidad: 002 (2 elementos: main y section)
+    */
+    main section {
+        grid-template-columns: 1fr; /* Una única columna a lo ancho de la pantalla */ /*ADVERTENCIA: redefinición de la propiedad*/
+    }
+
+}
+
+
+

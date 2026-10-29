@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Salida, Plaza del Casino</name>
+      <description>Inicio de la etapa</description>
+      <Style>
+        <IconStyle>
+          <color>ff0000ff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.427531069277956,43.73953629540799,48</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: All. des Boulingrins</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.426726724045306,43.73964658569401,48</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Curva despues del parque</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.4255227304548725,43.740319470786865,49</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 1</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.426844581409796,43.74160566682653,50</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 2</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.429525661776189,43.74557358303725,53</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 3</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.432234026705657,43.74788820712026,55</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 4</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.429442035365727,43.74549960555302,51</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 5</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.426920212139798,43.74158522714451,41</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 6</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.427743120262522,43.740232083328294,38</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 7</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.428893404843653,43.74112831747407,35</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Curva famosa de Monaco (Fairmont Hairpin)</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.429664772151002,43.740235342385866,29</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Entrada Av. Princesse Grace</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.430219615291415,43.74175404392142,21</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Grimaldi Forum (vuelta Av. Princesse Grace)</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates> 7.4348358278354425,43.74768942413826,15</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Vuelta Av. Princesse Grace</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.430219615291415,43.74175404392142,13</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 8</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.430408585608215,43.74123401516585,13</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Entrada al tunel (Portier)</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.430351539295305,43.74042622389538,12</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 9</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.427884055630381,43.737740327933324,9</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 10</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.422154011822992,43.73672534725665,14</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 11</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.4234269919854885,43.73266432502878,8</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 12</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.424602889068023,43.73229156469611,8</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 13</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.420876965735498,43.731834988797836,7</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 14</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.417089694115228,43.73000704553634,6</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 15</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.4222852520247296,43.72740934555089,6</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 16</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.418625462536076,43.726171058772735,7</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 17</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates> 7.413959569873843,43.72731031562975,7</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 18</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.416901990645838,43.73000615056967,7</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto: Punto anónimo 19</name>
+      <description>Punto_anonimo</description>
+      <Style>
+        <IconStyle>
+          <color>ff00ffff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.422405773050753,43.73243771120324,9</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Llegada</name>
+      <description>Fin de la etapa</description>
+      <Style>
+        <IconStyle>
+          <color>ff0000ff</color>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.421341314810148,43.73473762872134,10</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Ruta Etapa</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>7.427531069277956,43.73953629540799,48
+7.426726724045306,43.73964658569401,48
+7.4255227304548725,43.740319470786865,49
+7.426844581409796,43.74160566682653,50
+7.429525661776189,43.74557358303725,53
+7.432234026705657,43.74788820712026,55
+7.429442035365727,43.74549960555302,51
+7.426920212139798,43.74158522714451,41
+7.427743120262522,43.740232083328294,38
+7.428893404843653,43.74112831747407,35
+7.429664772151002,43.740235342385866,29
+7.430219615291415,43.74175404392142,21
+ 7.4348358278354425,43.74768942413826,15
+7.430219615291415,43.74175404392142,13
+7.430408585608215,43.74123401516585,13
+7.430351539295305,43.74042622389538,12
+7.427884055630381,43.737740327933324,9
+7.422154011822992,43.73672534725665,14
+7.4234269919854885,43.73266432502878,8
+7.424602889068023,43.73229156469611,8
+7.420876965735498,43.731834988797836,7
+7.417089694115228,43.73000704553634,6
+7.4222852520247296,43.72740934555089,6
+7.418625462536076,43.726171058772735,7
+ 7.413959569873843,43.72731031562975,7
+7.416901990645838,43.73000615056967,7
+7.422405773050753,43.73243771120324,9
+7.421341314810148,43.73473762872134,10</coordinates>
+        <altitudeMode>absolute</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>5</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

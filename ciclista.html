@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Daniel Suárez Sánchez" />
+    <meta name="description" content="Documento ciclista.html del proyecto LaVuelta2026" />
+   
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link href="multimedia/favicon.ico" rel="icon"/>
+</head>
+
+<body>
+   <!-- contenido de ciclista.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a title="Inicio de la página" href="index.html">Inicio</a>
+            <a title="Ciclista" href="ciclista.html" aria-current="page">Ciclista</a>
+            <a title="Equipo" href="equipo.html">Equipo</a>
+            <a title="Etapa" href="etapa.html">Etapa</a>
+            <a title="Meteorologia" href="meteorologia.html">Meteorologia</a>
+            <a title="Clasificaciones" href="clasificaciones.html">Clasificaciones</a>
+            <a title="Juegos" href="juegos.html">Juegos</a>
+            <a title="Ayuda al usuario" href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a title="Inicio de la página" href="index.html">Inicio</a></li>
+            <li>>></li>
+            <li>Ciclista</li>
+        </ol>
+    </nav>
+
+    <main>
+        <h2>Renard haquin</h2>
+
+        <section class="detalle">
+            <h3>Datos personales</h3>
+            <ul>
+                <li>Henri François Renard haquin</li>
+                <li>12/12/2002</li>
+                <li>Francia</li>
+                <li>TEAM PICNIC POSTNL/ned</li>
+                <li>N°217</li>
+            </ul>
+            <picture>
+                <source srcset="multimedia/ImagenCiclistaMovil.png" media="(max-width: 768px)" width="194" height="183"/> 
+                <source srcset="multimedia/ImagenCiclistaTablet.png" media="(max-width: 1024px)" width="299" height="368"/>        
+                <img src="multimedia/ImagenCiclista.png" width="300" height="455" alt="Fotografia del ciclistsa Renard Haquin"/>
+            </picture>
+            
+        </section>
+
+        <section>
+            <h3>Datos equipos</h3>
+            <ol>
+                <li>Team Picnic PostNL</li>
+                <li>Wagner Bazin WB</li>
+                <li>CC Étupes</li>
+                <li>Team Prodialog-David Derepas</li>
+                
+            </ol>
+        </section>
+
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <caption>Resultados y estadísticas del ciclista</caption>
+                <thead>
+                    <tr>
+                        <th id="th-concepto" scope="col">Concepto</th>
+                        <th id="th-resultado" scope="col">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="th-concepto">Podios</td>
+                        <td headers="th-resultado">7</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-concepto">Carreras disputadas</td>
+                        <td headers="th-resultado">45</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-concepto">Victorias de etapa</td>
+                        <td headers="th-resultado">1</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-concepto">Mejor puesto en etapa</td>
+                        <td headers="th-resultado">9º</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-concepto">Mejor puesto general</td>
+                        <td headers="th-resultado">12º</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-concepto">Equipos disputados</td>
+                        <td headers="th-resultado">4</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </section>
+
+        <section>
+            <h3>Multimedia</h3>
+            <p>
+                Equipo 
+                <a href="https://www.lavuelta.es/es/equipo/TPP/team-picnic-postnl" target="_blank" title="Página oficial del equipo en La Vuelta">Team Picnic PostNL</a>
+                en la Vuelta Ciclista a España 2026.
+            </p>
+
+            <video controls poster="multimedia/integrantes_equipo.png">
+                <source src="multimedia/intro_equipos.mp4" type="video/mp4"/>
+                <source src="multimedia/intro_equipos.webm" type="video/webm"/>
+            </video>
+
+            <audio controls>
+                <source src="multimedia/podcast.mp3" type="audio/mpeg"/>
+                <!-- TODO Aqui faltaría el otro formato de audio en wav-->
+            </audio>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Daniel Suárez Sánchez</p>
+        
+        <address>
+            <a href="mailto:UO301014@uniovi.es">
+                UO301014@uniovi.es
+            </a>
+        </address>
+    </footer>
+</body>
+</html>

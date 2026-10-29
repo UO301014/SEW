@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<etapa
+    xmlns="http://www.uniovi.es"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
+    >
+
+    <nombre>Mónaco a Mónaco</nombre>
+    <numero>1</numero>
+    <longitud unidad="km">9.4</longitud>
+    <fecha>2026-08-22</fecha>
+    <tiempo_ganador>PT10M57S</tiempo_ganador>
+    <velocidad_media unidad="km/h">51.51</velocidad_media>
+    <desnivel unidad="m">80</desnivel>
+    <salida>Mónaco</salida>
+    <llegada>Mónaco</llegada>
+    <tipo>contrarreloj individual</tipo>
+
+    <referencias>
+        <referencia>https://www.visitmonaco.com/e</referencia>
+        <referencia>https://lavueltamonaco.gouv.mc/es</referencia>
+        <referencia>https://www.lavuelta.es/</referencia>
+    </referencias>
+        
+    <fotografias>
+        <fotografia>salida_monaco.jpg</fotografia>
+        <fotografia>tunel_de_Fairmont.jpg</fotografia>
+        <fotografia>yates_con_corredor</fotografia>
+    </fotografias>
+
+    <videos>
+        <video>red_jersey_minute.mp4</video>
+    </videos>
+
+    <sonidos>
+        <sonido>podcast_monaco.mp3</sonido>
+    </sonidos>
+
+   <salida_coord>
+    <longitud_coord unidad="grados">7.427531069277956</longitud_coord>
+    <latitud_coord unidad="grados">43.73953629540799</latitud_coord>
+    <altitud_coord unidad="m">48</altitud_coord>
+    </salida_coord>
+
+    <llegada_coord>
+        <longitud_coord unidad="grados">7.421341314810148</longitud_coord>
+        <latitud_coord unidad="grados">43.73473762872134</latitud_coord>
+        <altitud_coord unidad="m">10</altitud_coord>
+    </llegada_coord>
+    
+    <hitos>
+    <punto_anonimo>
+        <nombre_punto>All. des Boulingrins</nombre_punto>
+        <longitud_coord unidad="grados">7.426726724045306</longitud_coord>
+        <latitud_coord unidad="grados">43.73964658569401</latitud_coord>
+        <altitud_coord unidad="m">48</altitud_coord>
+        <distancia unidad="km">0.1</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Curva despues del parque</nombre_punto>
+        <longitud_coord unidad="grados">7.4255227304548725</longitud_coord>
+        <latitud_coord unidad="grados">43.740319470786865</latitud_coord>
+        <altitud_coord unidad="m">49</altitud_coord>
+        <distancia unidad="km">0.2</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 1</nombre_punto>
+        <longitud_coord unidad="grados">7.426844581409796</longitud_coord>
+        <latitud_coord unidad="grados">43.74160566682653</latitud_coord>
+        <altitud_coord unidad="m">50</altitud_coord>
+        <distancia unidad="km">0.5</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 2</nombre_punto>
+        <longitud_coord unidad="grados">7.429525661776189</longitud_coord>
+        <latitud_coord unidad="grados">43.74557358303725</latitud_coord>
+        <altitud_coord unidad="m">53</altitud_coord>
+        <distancia unidad="km">1.1</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 3</nombre_punto>
+        <longitud_coord unidad="grados">7.432234026705657</longitud_coord>
+        <latitud_coord unidad="grados">43.74788820712026</latitud_coord>
+        <altitud_coord unidad="m">55</altitud_coord>
+        <distancia unidad="km">1.5</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 4</nombre_punto>
+        <longitud_coord unidad="grados">7.429442035365727</longitud_coord>
+        <latitud_coord unidad="grados">43.74549960555302</latitud_coord>
+        <altitud_coord unidad="m">51</altitud_coord>
+        <distancia unidad="km">1.9</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 5</nombre_punto>
+        <longitud_coord unidad="grados">7.426920212139798</longitud_coord>
+        <latitud_coord unidad="grados">43.74158522714451</latitud_coord>
+        <altitud_coord unidad="m">41</altitud_coord>
+        <distancia unidad="km">2.5</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 6</nombre_punto>
+        <longitud_coord unidad="grados">7.427743120262522</longitud_coord>
+        <latitud_coord unidad="grados">43.740232083328294</latitud_coord>
+        <altitud_coord unidad="m">38</altitud_coord>
+        <distancia unidad="km">2.7</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 7</nombre_punto>
+        <longitud_coord unidad="grados">7.428893404843653</longitud_coord>
+        <latitud_coord unidad="grados">43.74112831747407</latitud_coord>
+        <altitud_coord unidad="m">35</altitud_coord>
+        <distancia unidad="km">2.9</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Curva famosa de Monaco (Fairmont Hairpin)</nombre_punto>
+        <longitud_coord unidad="grados">7.429664772151002</longitud_coord>
+        <latitud_coord unidad="grados">43.740235342385866</latitud_coord>
+        <altitud_coord unidad="m">29</altitud_coord>
+        <distancia unidad="km">3.1</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Entrada Av. Princesse Grace</nombre_punto>
+        <longitud_coord unidad="grados">7.430219615291415</longitud_coord>
+        <latitud_coord unidad="grados">43.74175404392142</latitud_coord>
+        <altitud_coord unidad="m">21</altitud_coord>
+        <distancia unidad="km">3.3</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Grimaldi Forum (vuelta Av. Princesse Grace)</nombre_punto>
+        <longitud_coord unidad="grados"> 7.4348358278354425</longitud_coord>
+        <latitud_coord unidad="grados">43.74768942413826</latitud_coord>
+        <altitud_coord unidad="m">15</altitud_coord>
+        <distancia unidad="km">3.6</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Vuelta Av. Princesse Grace</nombre_punto>
+        <longitud_coord unidad="grados">7.430219615291415</longitud_coord>
+        <latitud_coord unidad="grados">43.74175404392142</latitud_coord>
+        <altitud_coord unidad="m">13</altitud_coord>
+        <distancia unidad="km">3.9</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 8</nombre_punto>
+        <longitud_coord unidad="grados">7.430408585608215</longitud_coord>
+        <latitud_coord unidad="grados">43.74123401516585</latitud_coord>
+        <altitud_coord unidad="m">13</altitud_coord>
+        <distancia unidad="km">4.0</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Entrada al tunel (Portier)</nombre_punto>
+        <longitud_coord unidad="grados">7.430351539295305</longitud_coord>
+        <latitud_coord unidad="grados">43.74042622389538</latitud_coord>
+        <altitud_coord unidad="m">12</altitud_coord>
+        <distancia unidad="km">4.1</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 9</nombre_punto>
+        <longitud_coord unidad="grados">7.427884055630381</longitud_coord>
+        <latitud_coord unidad="grados">43.737740327933324</latitud_coord>
+        <altitud_coord unidad="m">9</altitud_coord>
+        <distancia unidad="km">4.6</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 10</nombre_punto>
+        <longitud_coord unidad="grados">7.422154011822992</longitud_coord>
+        <latitud_coord unidad="grados">43.73672534725665</latitud_coord>
+        <altitud_coord unidad="m">14</altitud_coord>
+        <distancia unidad="km">5.2</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 11</nombre_punto>
+        <longitud_coord unidad="grados">7.4234269919854885</longitud_coord>
+        <latitud_coord unidad="grados">43.73266432502878</latitud_coord>
+        <altitud_coord unidad="m">8</altitud_coord>
+        <distancia unidad="km">5.8</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 12</nombre_punto>
+        <longitud_coord unidad="grados">7.424602889068023</longitud_coord>
+        <latitud_coord unidad="grados">43.73229156469611</latitud_coord>
+        <altitud_coord unidad="m">8</altitud_coord>
+        <distancia unidad="km">5.9</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 13</nombre_punto>
+        <longitud_coord unidad="grados">7.420876965735498</longitud_coord>
+        <latitud_coord unidad="grados">43.731834988797836</latitud_coord>
+        <altitud_coord unidad="m">7</altitud_coord>
+        <distancia unidad="km">6.3</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 14</nombre_punto>
+        <longitud_coord unidad="grados">7.417089694115228</longitud_coord>
+        <latitud_coord unidad="grados">43.73000704553634</latitud_coord>
+        <altitud_coord unidad="m">6</altitud_coord>
+        <distancia unidad="km">6.7</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 15</nombre_punto>
+        <longitud_coord unidad="grados">7.4222852520247296</longitud_coord>
+        <latitud_coord unidad="grados">43.72740934555089</latitud_coord>
+        <altitud_coord unidad="m">6</altitud_coord>
+        <distancia unidad="km">7.4</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 16</nombre_punto>
+        <longitud_coord unidad="grados">7.418625462536076</longitud_coord>
+        <latitud_coord unidad="grados">43.726171058772735</latitud_coord>
+        <altitud_coord unidad="m">7</altitud_coord>
+        <distancia unidad="km">7.8</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 17</nombre_punto>
+        <longitud_coord unidad="grados"> 7.413959569873843</longitud_coord>
+        <latitud_coord unidad="grados">43.72731031562975</latitud_coord>
+        <altitud_coord unidad="m">7</altitud_coord>
+        <distancia unidad="km">8.0</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 18</nombre_punto>
+        <longitud_coord unidad="grados">7.416901990645838</longitud_coord>
+        <latitud_coord unidad="grados">43.73000615056967</latitud_coord>
+        <altitud_coord unidad="m">7</altitud_coord>
+        <distancia unidad="km">8.3</distancia>
+    </punto_anonimo>
+
+    <punto_anonimo>
+        <nombre_punto>Punto anónimo 19</nombre_punto>
+        <longitud_coord unidad="grados">7.422405773050753</longitud_coord>
+        <latitud_coord unidad="grados">43.73243771120324</latitud_coord>
+        <altitud_coord unidad="m">9</altitud_coord>
+        <distancia unidad="km">9.0</distancia>
+    </punto_anonimo>
+</hitos>
+
+    <clasificacion_etapa>
+        <corredor_etapa>
+            <posicion>1</posicion>
+            <nombre_corredor>Tadej Pogacar</nombre_corredor>
+            <equipo>UAE Team Emirates XRG</equipo>
+        </corredor_etapa>
+        <corredor_etapa>
+            <posicion>2</posicion>
+            <nombre_corredor>Ethan Hayter</nombre_corredor>
+            <equipo>Soudal - Quick Step</equipo>
+            <diferencia_tiempo>PT0S</diferencia_tiempo>
+        </corredor_etapa>
+        <corredor_etapa>
+            <posicion>3</posicion>
+            <nombre_corredor>Joshua Tarling</nombre_corredor>
+            <equipo>Netcompany Ineos</equipo>
+            <diferencia_tiempo>PT4S</diferencia_tiempo>
+        </corredor_etapa>
+    </clasificacion_etapa>
+
+    <clasificacion_general>
+        <corredor_general>
+            <posicion>1</posicion>
+            <nombre_corredor>Tadej Pogacar</nombre_corredor>
+            <equipo>UAE Team Emirates XRG</equipo>
+        </corredor_general>
+        <corredor_general>
+            <posicion>2</posicion>
+            <nombre_corredor>Ethan Hayter</nombre_corredor>
+            <equipo>Soudal - Quick Step</equipo>
+            <diferencia_tiempo>PT0S</diferencia_tiempo>
+        </corredor_general>
+        <corredor_general>
+            <posicion>3</posicion>
+            <nombre_corredor>Joshua Tarling</nombre_corredor>
+            <equipo>Netcompany Ineos</equipo>
+            <diferencia_tiempo>PT4S</diferencia_tiempo>
+        </corredor_general>
+    </clasificacion_general>
+
+    <clasificacion_equipos>
+        <equipo_c>
+            <posicion>1</posicion>
+            <nombre_equipo>UAE Team Emirates XRG</nombre_equipo>
+        </equipo_c>
+
+        <equipo_c>
+            <posicion>2</posicion>
+            <nombre_equipo>Team Visma</nombre_equipo>
+            <diferencia_tiempo>PT3S</diferencia_tiempo>
+
+        </equipo_c>
+        
+        <equipo_c>
+            <posicion>3</posicion>
+            <nombre_equipo>Decathlon CMA CGM TEAM</nombre_equipo>
+            <diferencia_tiempo>PT7S</diferencia_tiempo>
+        </equipo_c>
+    </clasificacion_equipos>
+    
+</etapa>

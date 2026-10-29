@@ -1,0 +1,74 @@
+<!ELEMENT etapa (nombre, numero, longitud, fecha, tiempo_ganador, velocidad_media, desnivel, salida, llegada, tipo, referencias, fotografias, videos, sonidos, salida_coord, llegada_coord, hitos, clasificacion_etapa, clasificacion_general, clasificacion_equipos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempo_ganador (#PCDATA)>
+
+<!ELEMENT velocidad_media (#PCDATA)>
+<!ATTLIST velocidad_media unidad CDATA #REQUIRED>
+
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+
+<!ELEMENT salida (#PCDATA)>
+<!ELEMENT llegada (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!-- Pongo 3 referencias ya que mínimo han de ser 3-->
+<!ELEMENT referencias (referencia, referencia, referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT sonidos (sonido+)>
+<!ELEMENT sonido (#PCDATA)>
+
+<!ELEMENT salida_coord (longitud_coord, latitud_coord, altitud_coord)>
+<!ELEMENT llegada_coord (longitud_coord, latitud_coord, altitud_coord)>
+
+<!ELEMENT longitud_coord (#PCDATA)>
+<!ATTLIST longitud_coord unidad CDATA #REQUIRED>
+<!ELEMENT latitud_coord (#PCDATA)>
+<!ATTLIST latitud_coord unidad CDATA #REQUIRED>
+<!ELEMENT altitud_coord (#PCDATA)>
+<!ATTLIST altitud_coord unidad CDATA #REQUIRED>
+
+<!ELEMENT hitos ((puerto | sprint | punto_anonimo)*)>
+
+<!ELEMENT puerto (nombre_puerto, longitud_coord, latitud_coord, altitud_coord, distancia)>
+<!-- Este enumerado hay que ver como cambiarlo -->
+<!ATTLIST puerto categoria (primera | segunda | tercera | especial | bonificado) #REQUIRED>
+<!ELEMENT nombre_puerto (#PCDATA)>
+
+<!ELEMENT sprint (nombre_sprint, longitud_coord, latitud_coord, altitud_coord, distancia)>
+<!ATTLIST sprint tipo (intermedio | bonificado) #REQUIRED>
+<!ELEMENT nombre_sprint (#PCDATA)>
+
+<!ELEMENT punto_anonimo (nombre_punto?, longitud_coord, latitud_coord, altitud_coord, distancia)>
+<!ELEMENT nombre_punto (#PCDATA)>
+
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+
+<!ELEMENT clasificacion_etapa (corredor_etapa, corredor_etapa, corredor_etapa)>
+<!ELEMENT corredor_etapa (posicion, nombre_corredor, equipo, diferencia_tiempo?)>
+
+<!ELEMENT clasificacion_general (corredor_general, corredor_general, corredor_general)>
+<!ELEMENT corredor_general (posicion, nombre_corredor, equipo, diferencia_tiempo?)>
+
+<!ELEMENT clasificacion_equipos (equipo_c, equipo_c, equipo_c)>
+<!ELEMENT equipo_c (posicion, nombre_equipo, diferencia_tiempo?)>
+
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT nombre_corredor (#PCDATA)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT nombre_equipo (#PCDATA)>
+<!ELEMENT diferencia_tiempo (#PCDATA)>
