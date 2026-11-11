@@ -17,7 +17,7 @@
     <tipo>contrarreloj individual</tipo>
 
     <referencias>
-        <referencia>https://www.visitmonaco.com/e</referencia>
+        <referencia>https://www.visitmonaco.com/es</referencia>
         <referencia>https://lavueltamonaco.gouv.mc/es</referencia>
         <referencia>https://www.lavuelta.es/</referencia>
     </referencias>
@@ -33,7 +33,7 @@
     </videos>
 
     <sonidos>
-        <sonido>podcast_monaco.mp3</sonido>
+        <sonido>podcast.mp3</sonido>
     </sonidos>
 
    <salida_coord>

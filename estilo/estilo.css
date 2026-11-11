@@ -1,6 +1,6 @@
 /* ***************************************/
 /*           LaVuelta2026                */
-/*          Estilos layout               */
+/*              Estilos                  */
 /* ***************************************/
 /*    DATOS ESTUDIANTE                   */
 /* --------------------------------------*/
@@ -102,8 +102,8 @@ header + nav > ol > li:last-child{
   font-weight: bold;
 } 
 
-/*Especifidad 024*/
-main section:first-of-type ul li:first-child{
+/*Especifidad 024*/ 
+main section.detalle ul li:first-child{
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -118,7 +118,7 @@ main section:first-of-type ul li:nth-child(4){
   font-weight: bold;
 }
 
-/* Especificidad: 013 */
+/* Especificidad: 012 */
 main section:nth-of-type(4) > * {
     margin-bottom: 15px; 
 }

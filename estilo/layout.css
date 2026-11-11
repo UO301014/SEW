@@ -56,6 +56,16 @@ main section{
     gap: 1em;
 }
 
+/*
+    Secciones generadas con JS (ciudad.js y equipo.js):
+    se muestran en bloque en lugar de en la cuadrícula de 4 columnas
+    Especifidad: 012
+*/
+main section.informacion{
+    display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original grid (main section)*/
+    justify-items: start; /*ADVERTENCIA: redefinición de la propiedad con valor original center (main section)*/
+}
+
 /*Especifidad: 003*/
 main section h3{
     grid-column: 1 / -1;
