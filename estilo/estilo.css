@@ -55,7 +55,7 @@ header,footer{
 
 /* Especificidad: 001 */
 h2{
-    color: var(--color-principal); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    color: var(--color-principal); /*ADVERTENCIA: color de fondo heredado de body --color-blanco (contraste 8.55:1, AAA) */
 }
 
 /*
@@ -168,7 +168,7 @@ main section table caption {
     font-weight: bold;
     margin-bottom: 0.75em;
     text-align: center;
-    color: var(--color-negro); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    color: var(--color-negro); /*ADVERTENCIA: color de fondo heredado de body --color-blanco (contraste 18.26:1, AAA) */
 }
 
 /* 
@@ -198,8 +198,7 @@ main section table td {
    Especificidad: 015 (1 pseudoclase: nth-child, 5 elementos: main, section, table, tbody, tr)
 */
 main section table tbody tr:nth-child(even) {
-    background-color: var(--color-cebra-tabla); /* Gris muy claro que mantiene un contraste de texto > 15:1 */ 
-    /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    background-color: var(--color-cebra-tabla); /*ADVERTENCIA: color de texto heredado de body --color-negro (contraste > 15:1, AAA) */
 }
 
 /* 
@@ -207,7 +206,7 @@ main section table tbody tr:nth-child(even) {
    Especificidad: 015 (1 pseudoclase: hover, 5 elementos: main, section, table, tbody, tr)
 */
 main section table tbody tr:hover {
-    background-color: var(--color-tabla-hover); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    background-color: var(--color-tabla-hover); /*ADVERTENCIA: color de texto heredado de body --color-negro (contraste > 15:1, AAA) */
 }
 
 

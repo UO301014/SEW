@@ -113,7 +113,7 @@ search{
     justify-self: end;
     padding: 0.25em 0.5em;
     margin: 1em 2em 0 0;
-    border: 2px solid var(--color-secundario);
+    border: 2px solid var(--color-secundario); /*ADVERTENCIA: el validador no comprueba las variables CSS; --color-secundario es #0b2545 */
 }
 
 /*Especifidad: 002*/
@@ -184,7 +184,7 @@ footer{
        Especificidad: 002 (2 elementos: header y button)
     */
     header > button {
-        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original none (escritorio) */
         margin-bottom: 0.5em;
     }
 
@@ -193,7 +193,7 @@ footer{
        Especificidad: 002 (2 elementos: main y section)
     */
     main section {
-        grid-template-columns: repeat(2, 1fr); /*ADVERTENCIA: redefinición de la propiedad*/
+        grid-template-columns: repeat(2, 1fr); /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
     }
 }
 
@@ -207,7 +207,7 @@ footer{
        Especificidad: 002 (2 elementos: search y nav)
     */
     search + nav {
-        display: none; /*ADVERTENCIA: redefinición de la propiedad*/
+        display: none; /*ADVERTENCIA: redefinición de la propiedad con valor original none (tabletas) */
     }
 
     /*
@@ -215,7 +215,7 @@ footer{
        Especificidad: 002 (2 elementos: header y nav)
     */
     header nav {
-        display: none; /*ADVERTENCIA: redefinición de la propiedad con valor original none (tabletas)*/
+        display: none; /*ADVERTENCIA: redefinición de la propiedad con valor original none (tabletas) */
     }
 
     /*
@@ -223,9 +223,9 @@ footer{
        Especificidad: 012 (1 clase, 2 elementos: header y nav)
     */
     header nav.abierto {
-        display: flex; /*ADVERTENCIA: redefinición de la propiedad con valor original none */
-        flex-direction: column; /*ADVERTENCIA: redefinición de la propiedad con valor original column (tabletas)*/
-        gap: 1em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.75em */
+        display: flex; /*ADVERTENCIA: redefinición de la propiedad con valor original flex (tabletas) */
+        flex-direction: column; /*ADVERTENCIA: redefinición de la propiedad con valor original column (tabletas) */
+        gap: 1em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.75em (tabletas); el validador también avisa en la línea 0 por row-gap y column-gap, que son las propiedades que forman gap */
     }
 
     /*
@@ -233,8 +233,8 @@ footer{
        Especificidad: 002 (2 elementos: header y button)
     */
     header > button {
-        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original block (tabletas)*/
-        margin-bottom: 0.75em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.5em */
+        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original block (tabletas) */
+        margin-bottom: 0.75em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.5em (tabletas) */
     }
 
     /* 
@@ -242,7 +242,7 @@ footer{
        Especificidad: 002 (2 elementos: main y section)
     */
     main section {
-        grid-template-columns: 1fr; /* Una única columna a lo ancho de la pantalla */ /*ADVERTENCIA: redefinición de la propiedad*/
+        grid-template-columns: 1fr; /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(2, 1fr) (tabletas) */
     }
 
 }
