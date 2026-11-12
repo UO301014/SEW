@@ -78,9 +78,10 @@ body{
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: 
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
     "cabecera"
+    "buscador"
     "migas"
     "contenido"
     "pie";
@@ -95,8 +96,28 @@ header{
     padding: 1em 2em;
 }
 
+/*
+    Botón del menú para móviles: oculto en escritorio
+    Especifidad: 002
+*/
+header > button{
+    display: none;
+}
+
+/*
+    Buscador situado a la derecha, entre la cabecera y las migas
+    Especifidad: 001
+*/
+search{
+    grid-area: buscador;
+    justify-self: end;
+    padding: 0.25em 0.5em;
+    margin: 1em 2em 0 0;
+    border: 2px solid var(--color-secundario);
+}
+
 /*Especifidad: 002*/
-header + nav{
+search + nav{
     grid-area: migas;
 }
 
@@ -123,9 +144,9 @@ footer{
 
     /* 
        1. Ocultar las migas de pan
-       Especificidad: 002 (2 elementos: header y nav)
+       Especificidad: 002 (2 elementos: search y nav)
     */
-    header + nav {
+    search + nav {
         display: none;
     }
 
@@ -143,10 +164,28 @@ footer{
        Especificidad: 002 (2 elementos: header y nav)
     */
     header nav {
-        display: flex;
+        display: none; /* Menú cerrado hasta que se pulsa el botón */
         width: 100%;
-        justify-content: space-around; /* Reparte las opciones de menú uniformemente */
-        flex-wrap: wrap; /* Permite que las opciones se reordenen si la pantalla se estrecha */
+        align-items: center;
+    }
+
+    /*
+       Menú abierto (clase añadida por menu.js)
+       Especificidad: 012 (1 clase, 2 elementos: header y nav)
+    */
+    header nav.abierto {
+        display: flex; /*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        flex-direction: column;
+        gap: 0.75em;
+    }
+
+    /*
+       Botón del menú visible en tabletas
+       Especificidad: 002 (2 elementos: header y button)
+    */
+    header > button {
+        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        margin-bottom: 0.5em;
     }
 
     /* 
@@ -165,20 +204,37 @@ footer{
 
     /* 
        1. Asegurar que las migas de pan permanezcan ocultas
-       Especificidad: 002 (2 elementos: header y nav)
+       Especificidad: 002 (2 elementos: search y nav)
     */
-    header + nav {
+    search + nav {
         display: none; /*ADVERTENCIA: redefinición de la propiedad*/
     }
 
-    /* 
-       2. Menú de navegación con las opciones dispuestas en columna
+    /*
+       2. Menú de navegación oculto hasta que se pulsa el botón
        Especificidad: 002 (2 elementos: header y nav)
     */
     header nav {
-        flex-direction: column; /* Apila los enlaces del menú verticalmente */
-        align-items: center;    /* Centra las opciones de navegación */
-        gap: 0.5em;             /* Añade separación vertical entre los enlaces */
+        display: none; /*ADVERTENCIA: redefinición de la propiedad con valor original none (tabletas)*/
+    }
+
+    /*
+       Menú abierto: opciones en columna con espacio para pulsarlas
+       Especificidad: 012 (1 clase, 2 elementos: header y nav)
+    */
+    header nav.abierto {
+        display: flex; /*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        flex-direction: column; /*ADVERTENCIA: redefinición de la propiedad con valor original column (tabletas)*/
+        gap: 1em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.75em */
+    }
+
+    /*
+       Botón del menú visible en móviles
+       Especificidad: 002 (2 elementos: header y button)
+    */
+    header > button {
+        display: block; /*ADVERTENCIA: redefinición de la propiedad con valor original block (tabletas)*/
+        margin-bottom: 0.75em; /*ADVERTENCIA: redefinición de la propiedad con valor original 0.5em */
     }
 
     /* 

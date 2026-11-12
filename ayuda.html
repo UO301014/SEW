@@ -15,12 +15,15 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link href="multimedia/favicon.ico" rel="icon"/>
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 
 <body>
    <!-- contenido de ayuda.html  -->
     <header>
         <h1><a href="index.html">LaVuelta2026</a></h1>
+        <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
         <nav>
             <a title="Inicio de la página" href="index.html">Inicio</a>
             <a title="Ciclista" href="ciclista.html">Ciclista</a>
@@ -32,6 +35,11 @@
             <a title="Ayuda al usuario" href="ayuda.html" aria-current="page">Ayuda</a>
         </nav>
     </header>
+
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" width="32" height="32" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar…" />
+    </search>
 
     <nav aria-label="migas">
         <ol>
@@ -56,7 +64,7 @@
 
         <section>
             <h3>Equipo</h3>
-            <p>Aquí se detalla la información del equipo Team Picnic PostNL, mostrando una lista estructurada con la alineación completa de corredores, sus respectivos dorsales y nacionalidades.</p>
+            <p>Aquí se detalla la información del equipo Team Picnic PostNL. La alineación de corredores se lee con JavaScript del fichero lavuelta.json y muestra, ordenados por dorsal, el nombre, el dorsal, la fecha de nacimiento y la nacionalidad de cada ciclista.</p>
             <p>Encima de la alineación, una sección generada con JavaScript (clase Equipo) muestra el nombre del equipo, su código UCI, el país al que representa, el director, la categoría y un enlace a la ficha del equipo en la web oficial de La Vuelta.</p>
         </section>
 
@@ -79,11 +87,14 @@
         <section>
             <h3>Juegos</h3>
             <p>Incluye un formulario interactivo compuesto por 10 preguntas diseñado para poner a prueba los conocimientos del usuario sobre la etapa de Mónaco. Utiliza diversos controles semánticos (deslizadores, selectores, casillas y botones) para interactuar con el visitante.</p>
+            <p>Al pulsar "Enviar respuestas" se corrigen las respuestas en la propia página y debajo del formulario aparece la puntuación obtenida, junto con la dureza y la descripción que el usuario ha dado a la etapa.</p>
         </section>
 
         <section>
             <h3>Ayuda</h3>
-            <p>El propósito de esta sección es proporcionar a los usuarios una guía rápida y accesible sobre la estructura y navegación del sitio web de La Vuelta 2026. Aquí se explica detalladamente qué tipo de información o interactividad puede encontrar el visitante en cada uno de los apartados principales (Ciclista, Equipo, Etapa, Meteorología, Clasificaciones y Juegos), facilitando así una experiencia de usuario más intuitiva y fluida.</p>        </section>
+            <p>El propósito de esta sección es proporcionar a los usuarios una guía rápida y accesible sobre la estructura y navegación del sitio web de La Vuelta 2026. Aquí se explica detalladamente qué tipo de información o interactividad puede encontrar el visitante en cada uno de los apartados principales (Ciclista, Equipo, Etapa, Meteorología, Clasificaciones y Juegos), facilitando así una experiencia de usuario más intuitiva y fluida.</p>
+            <p>En todas las páginas hay un buscador debajo de la cabecera: al escribir un texto y pulsar la lupa o la tecla Intro se resaltan en amarillo todas las apariciones de ese texto en la página. En tabletas y móviles el menú de navegación se oculta y se abre o cierra con el botón ☰ de la cabecera.</p>
+        </section>
     </main>
     <footer>
         <p>Daniel Suárez Sánchez</p>

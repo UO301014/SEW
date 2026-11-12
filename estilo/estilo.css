@@ -84,8 +84,25 @@ header a , footer a{
     text-decoration-line: none;
 }
 
+/* Especificidad: 011 */
+input[type="search"]{
+    border: none;
+}
+
+/*
+    Resaltado de los resultados del buscador.
+    Amarillo (#FFFF00) con texto negro (#111111): contraste 17.6:1 (WCAG AAA).
+    Se fija el color del texto para que dentro de la cabecera y el pie
+    no herede el blanco, que sobre amarillo no sería legible.
+    Especificidad: 001
+*/
+mark{
+    background-color: #ffff00;
+    color: var(--color-negro);
+}
+
 /*Especifidad 003*/
-header + nav > ol {
+search + nav > ol {
   list-style: none;
   font-size: 0.85em;
   padding: 0;
@@ -93,12 +110,12 @@ header + nav > ol {
 }
 
 /*Especifidad 004*/
-header + nav > ol > li{
+search + nav > ol > li{
   display: inline;
 }
 
 /*Especifidad 014*/
-header + nav > ol > li:last-child{
+search + nav > ol > li:last-child{
   font-weight: bold;
 } 
 

@@ -14,12 +14,16 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link href="multimedia/favicon.ico" rel="icon"/>
+    <script src="js/formulario.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 
 <body>
    <!-- contenido de juegos.html  -->
     <header>
         <h1><a href="index.html">LaVuelta2026</a></h1>
+        <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
         <nav>
             <a title="Inicio de la página" href="index.html">Inicio</a>
             <a title="Ciclista" href="ciclista.html">Ciclista</a>
@@ -31,6 +35,11 @@
             <a title="Ayuda al usuario" href="ayuda.html">Ayuda</a>
         </nav>
     </header>
+
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" width="32" height="32" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar…" />
+    </search>
 
     <nav aria-label="migas">
         <ol>
@@ -106,19 +115,19 @@
 
                 <p>¿Qué hitos están presentes en la etapa?</p>
                 <p>
-                    <input type="checkbox" id="hito-puerto" name="hitos-etapa" value="puerto de montana" />
+                    <input type="radio" id="hito-puerto" name="hitos-etapa" value="puerto de montana" required />
                     <label for="hito-puerto">Puerto de montaña</label><br/>
 
-                    <input type="checkbox" id="hito-especial" name="hitos-etapa" value="puerto categoria especial" />
+                    <input type="radio" id="hito-especial" name="hitos-etapa" value="puerto categoria especial" />
                     <label for="hito-especial">Puerto categoría especial</label><br/>
 
-                    <input type="checkbox" id="hito-sprint" name="hitos-etapa" value="sprint intermedio" />
+                    <input type="radio" id="hito-sprint" name="hitos-etapa" value="sprint intermedio" />
                     <label for="hito-sprint">Sprint intermedio</label><br/>
 
-                    <input type="checkbox" id="hito-bonificado" name="hitos-etapa" value="sprint bonificado" />
+                    <input type="radio" id="hito-bonificado" name="hitos-etapa" value="sprint bonificado" />
                     <label for="hito-bonificado">Sprint bonificado</label><br/>
 
-                    <input type="checkbox" id="hito-ninguno" name="hitos-etapa" value="sin hitos" />
+                    <input type="radio" id="hito-ninguno" name="hitos-etapa" value="sin hitos" />
                     <label for="hito-ninguno">Sin hitos</label>
                 </p>
 

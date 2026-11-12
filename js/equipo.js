@@ -1,3 +1,34 @@
+class Ciclista {
+    // Atributos públicos
+    dorsal;
+    nombre;
+    apellidos;
+    nacionalidad;
+    nacionalidadCodigo;
+    fechaNacimiento;
+
+    constructor(dorsal, nombre, apellidos, nacionalidad, nacionalidadCodigo, fechaNacimiento) {
+        this.dorsal = dorsal;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.nacionalidad = nacionalidad;
+        this.nacionalidadCodigo = nacionalidadCodigo;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    getNombreCompleto() {
+        return `${this.nombre} - ${this.apellidos}`;
+    }
+
+    getDorsal() {
+        return this.dorsal;
+    }
+
+    getInformacionAdicional() {
+        return `${this.fechaNacimiento}, ${this.nacionalidad}`;
+    }
+}
+
 class Equipo {
     // Atributos públicos
     nombreEquipo;
@@ -6,11 +37,13 @@ class Equipo {
     nombreDirector;
     categoria;
     direccionWeb;
+    alineacion;
 
     constructor(nombre, codigo, pais) {
         this.nombreEquipo = nombre;
         this.codigoEquipo = codigo;
         this.paisEquipo = pais;
+        this.alineacion = [];
     }
 
     rellenarAtributos(nombreDirector, categoria, direccionWeb) {
@@ -45,6 +78,48 @@ class Equipo {
             primeraSeccion.appendChild(parrafo);
         }
     }
+
+    // Lee el fichero JSON y se queda con la información de este equipo
+    async leerEquipo() {
+        const respuesta = await fetch("js/lavuelta.json");
+        const datos = await respuesta.json();
+        const equipo = datos.equipos.find(e => e.codigo_uci === this.codigoEquipo);
+        if (equipo) {
+            this.alinearCiclistas(equipo);
+        }
+    }
+
+    // Crea un objeto Ciclista por cada corredor del equipo
+    alinearCiclistas(equipo) {
+        equipo.corredores.forEach(corredor => {
+            this.alineacion.push(new Ciclista(
+                corredor.dorsal,
+                corredor.nombre,
+                corredor.apellidos,
+                corredor.nacionalidad,
+                corredor.nacionalidad_codigo,
+                corredor.fecha_nacimiento
+            ));
+        });
+    }
+
+    // Añade la alineación, ordenada por dorsal, a la sección de corredores
+    mostrarAlineacion() {
+        const seccionAlineacion = document.querySelector("main section:last-of-type");
+        if (!seccionAlineacion) {
+            return;
+        }
+        const ordenados = [...this.alineacion].sort((a, b) => a.getDorsal() - b.getDorsal());
+        ordenados.forEach(ciclista => {
+            const articulo = `<article>
+                <h4>${ciclista.getNombreCompleto()}</h4>
+                <img src="multimedia/icono_cilcista.png" alt="Icono de corredor" />
+                <p>Dorsal ${ciclista.getDorsal()}</p>
+                <p>${ciclista.getInformacionAdicional()}</p>
+            </article>`;
+            seccionAlineacion.insertAdjacentHTML("beforeend", articulo);
+        });
+    }
 }
 
 // Instanciación del objeto
@@ -70,3 +145,6 @@ if (h2Equipo) {
 
 // Añadir el enlace a la ficha del equipo como párrafo final
 miEquipo.getPaginaWeb();
+
+// Leer la alineación real del JSON y mostrarla después del enlace
+miEquipo.leerEquipo().then(() => miEquipo.mostrarAlineacion());

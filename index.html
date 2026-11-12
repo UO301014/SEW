@@ -15,12 +15,15 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link href="multimedia/favicon.ico" rel="icon"/>
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 
 <body>
    <!-- contenido de index.html  -->
     <header>
         <h1><a href="index.html">LaVuelta2026</a></h1>
+        <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
         <nav>
             <a title="Inicio de la página" href="index.html" aria-current="page">Inicio</a>
             <a title="Ciclista" href="ciclista.html">Ciclista</a>
@@ -32,6 +35,11 @@
             <a title="Ayuda al usuario" href="ayuda.html">Ayuda</a>
         </nav>    
     </header>
+
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" width="32" height="32" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar…" />
+    </search>
     <main>
         <h2>Inicio</h2>
     </main>
